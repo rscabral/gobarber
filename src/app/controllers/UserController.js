@@ -19,6 +19,11 @@ class UserController {
       provider,
     });
   }
+
+  async update(request, response) {
+    console.log(request.userId);
+    return response.json({ message: 'Ok' });
+  }
 }
 
 export default new UserController();
